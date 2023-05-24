@@ -1,0 +1,13 @@
+.inicio {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 10px;
+}

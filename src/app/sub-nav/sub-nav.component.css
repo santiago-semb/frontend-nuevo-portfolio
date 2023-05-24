@@ -1,0 +1,12 @@
+#subnav {
+    background-color:gray;
+    height: 20px;
+    text-align: center;
+}
+
+#subnav p {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 15px;
+    color: gainsboro;
+}

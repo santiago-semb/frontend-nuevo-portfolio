@@ -1,0 +1,35 @@
+.experiencia {
+    width: 80%;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 0.4em;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.datos {
+    display: flex;
+}
+
+img {
+    width: 280px;
+    height: 280px;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+
+.descripcion {
+    width: 700px;
+    margin-left: 40px;
+    height: 300px;
+}
+
+#subnav {
+    background-color:gray;
+    height: 25px;
+    text-align: center;
+}
+
+i {
+    font-size: 20px;
+}

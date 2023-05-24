@@ -1,0 +1,22 @@
+.header {
+    background: rgb(71,6,6);
+    background: radial-gradient(circle, rgba(71,6,6,1) 0%, rgba(24,44,113,1) 0%, rgba(11,35,62,1) 100%); 
+    height: 50px;
+    width: 100%;
+}
+
+.header h4 {
+    color: white;
+    font-family:sans-serif;
+    border-bottom: 2px solid gray;
+    border-radius: 0.1em;
+    width: 20%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.header img {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+}
