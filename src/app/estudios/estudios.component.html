@@ -3,12 +3,11 @@
 </div>
 
 <div class="estudios">
-
+  <div class="table-responsive">
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Institucion</th>
+            <th scope="col">Institución</th>
             <th scope="col">Completo</th>
             <th scope="col">Fecha</th>
             <th scope="col">Certificado</th>
@@ -16,31 +15,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+          <tr *ngFor="let estudio of estudios;let i=index;">
+            <td>{{estudio.institucion}}</td>
+            <td *ngIf="estudio.completo == false">No</td>
+            <td *ngIf="estudio.completo == true">Si</td>
+            <td>{{estudio.fecha}}</td>
+            <td>{{estudio.certificado}}</td>
+            <td>{{estudio.link_certificado}}</td>
           </tr>
         </tbody>
       </table>
-
+  </div>
 </div>

@@ -8,6 +8,9 @@ import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 
 const routes: Routes = [
+  // RUTA POR DEFECTO
+  {path:'', redirectTo:'inicio', pathMatch:'full'},
+  // RESTO DE RUTAS
   {path:'inicio', component:InicioComponent},
   {path:'estudios', component:EstudiosComponent},
   {path:'certificados', component:CertificadosComponent},

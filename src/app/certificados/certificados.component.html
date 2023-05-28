@@ -2,12 +2,8 @@
     <div class="col"><i id="logo" class="fa-solid fa-certificate"></i></div>
 </div>
 
-<div class="container">
-    <h1 class="titulo">Segunda etapa Argentina Programa (#YoProgramo)</h1>
-    <div class="article">
-        <img src="../../assets/img/certificado_yo_programo_Arg_programa - copia.png" alt="curso-argentina-programa-yo-programo">
-    </div>
+<div class="container" *ngFor="let certificado of certificados;let i=index;">
+    <h1 class="titulo">{{certificado.nombre}}</h1>    
+        <img src="../../assets/certificados/c_{{certificado.img}}" class="img-fluid img-thumbnail" alt="imagen-certificado">
+    <p id="p-linkcert">Link Certificado: <a target="_blank" href="{{certificado.link}}">{{certificado.link}}</a></p>
 </div>
-
-
-<footer style="margin-top: 100px;"></footer>

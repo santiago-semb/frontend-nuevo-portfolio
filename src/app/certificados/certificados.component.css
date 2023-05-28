@@ -5,22 +5,17 @@
     border: 1px solid gray;
     border-radius: 0.4em;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
-.article {
-    width: 600px;
-    height: 400px;
-    background-color: whitesmoke;
-    margin: 0 auto;
-}
 
 .titulo {
     margin-bottom: 20px;
 }
 
 img {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     border-radius: 0.2em;
 }
 
@@ -29,6 +24,10 @@ img {
     background-color:gray;
     height: 25px;
     text-align: center;
+}
+
+#p-linkcert {
+    margin-top: 50px;
 }
 
 i {

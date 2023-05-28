@@ -2,58 +2,24 @@
   <div class="col"><i class="fa-solid fa-diagram-project"></i></div>
 </div>
   <div class="proyectos">
+    <div class="table-responsive">
     <table class="table">
         <thead>
           <tr class="bg-dark" style="color: whitesmoke">
             <th scope="col">#</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Lenguajes</th>
+            <th id="lenguajes" scope="col">Lenguajes</th>
             <th scope="col">Link</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+          <tr *ngFor="let proyecto of proyectos;let i=index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{proyecto.nombre}}</td>
+            <td id="lenguajes">{{proyecto.lenguajes}}</td>
+            <td><a href="{{proyecto.link}}" target="_blank">{{proyecto.link}}</a></td>
           </tr>
         </tbody>
       </table>
     </div>
+  </div>

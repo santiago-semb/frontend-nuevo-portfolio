@@ -5,36 +5,36 @@
 <div class="row" id="sobremi">
 
     <!-- medio -->
-    <img src="#" alt="foto-persona">
+    <img src="../../assets/persona/c_{{santiago.img}}" alt="foto-persona" class="img-fluid img-thumbnail">
 
     <!-- izquierda -->
+
     <div class="row" id="div-izquierda">
         <div class="col-12" id="div-mayor">
-            <p><span class="div-campo">nombre</span><span class="valor-campo">gfdgdfgdfgfd</span></p>
+            <p><span class="div-campo">nombre</span><span class="valor-campo">{{santiago.nombre}}</span></p>
         </div>
         <div class="col-12" id="div-mayor">
-            <p><span class="div-campo">apellido</span><span class="valor-campo"></span></p>
+            <p><span class="div-campo">apellido</span><span class="valor-campo">{{santiago.apellido}}</span></p>
         </div>
         <div class="col-12" id="div-mayor">
-            <p><span class="div-campo">edad</span><span class="valor-campo"></span></p>
+            <p><span class="div-campo">edad</span><span class="valor-campo">{{santiago.edad}}</span></p>
         </div>
         <div class="col-12" id="div-mayor">
-            <p><span class="div-campo">fecha de nacimiento</span><span class="valor-campo"></span></p>
+            <p><span class="div-campo">fecha de nacimiento</span><span class="valor-campo">{{santiago.fecha_de_nacimiento}}</span></p>
         </div>
     </div>
-    
 
     <!-- derecha -->
 
     <div class="row" id="div-derecha">
         <div class="col-12" id="div-mayor">
-            <p><span class="div-campo">teléfono</span><span class="valor-campo"></span></p>
+            <p><span class="div-campo">teléfono</span><span class="valor-campo">{{santiago.telefono}}</span></p>
         </div>
         <div class="col-12" id="div-mayor">
-            <p><span class="div-campo">email</span><span class="valor-campo"></span></p>
+            <p><span class="div-campo">email</span><span class="valor-campo" style="text-transform: lowercase;">{{santiago.email}}</span></p>
         </div>
         <div class="col-12" id="div-mayor">
-            <p><span class="div-campo">dirección</span><span class="valor-campo"></span></p>
+            <p><span class="div-campo">dirección</span><span class="valor-campo">{{santiago.direccion}}</span></p>
         </div>
     </div>
 
@@ -42,10 +42,11 @@
 
     <div class="row">
         <div class="textarea">
-            gfdgdsfgdsgfds
+            {{santiago.descripcion}}
         </div>
     </div>
 
+    <app-skills></app-skills>
+
 </div>
 
-<app-skills></app-skills>

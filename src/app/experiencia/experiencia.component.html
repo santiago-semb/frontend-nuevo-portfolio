@@ -2,18 +2,19 @@
   <div class="col"><i class="fa-solid fa-address-card"></i></div>
 </div>
 
-<div class="experiencia">
+<div class="experiencia" *ngFor="let exp of experiencias;let i=index">
     <div class="datos">       
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV-Wj5SFOux8Hs5JVpBqxB0uZOtcE-UeqO1A&usqp=CAU" alt="imagen-experiencia"> 
+        <img src="../../assets/experiencias/c_{{exp.img}}" class="img-fluid img-thumbnail" alt="imagen-experiencia"> 
         <div class="descripcion">
-            <span></span>
+            <span>{{exp.descripcion}}</span>
         </div>
     </div>
+    <div class="table-responsive">
     <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">Lugar</th>
-            <th scope="col">Direccion</th>
+            <th scope="col">Dirección</th>
             <th scope="col">Tiempo</th>
             <th scope="col">Desde</th>
             <th scope="col">Hasta</th>
@@ -21,13 +22,13 @@
         </thead>
         <tbody>
           <tr>
-            <td>Lugar de comida X</td>
-            <td>Av. avenida 123</td>
-            <td>6 meses</td>
-            <td>24/00/0000</td>
-            <td>24/00/0000</td>
+            <td>{{exp.lugar}}</td>
+            <td>{{exp.direccion}}</td>
+            <td>{{exp.tiempo}}</td>
+            <td>{{exp.desde}}</td>
+            <td>{{exp.hasta}}</td>
           </tr>
         </tbody>
-      </table>
-
+    </table>
+    </div>
 </div>
